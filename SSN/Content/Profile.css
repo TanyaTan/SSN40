@@ -1,0 +1,188 @@
+﻿html, body 
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    font: normal 12px Tahoma, Geneva, Sans-Serif;    
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+.header 
+{
+    width: 100%;
+    height: 30px;
+    background: #000;
+    position: fixed;
+    top: 0;
+}
+
+.header_inner 
+{
+    width: 960px;
+    margin: 0 auto;
+    height: inherit;
+}
+.search 
+{
+    float: left;
+}
+.search input[type=text] 
+{
+    margin-top: 2px;
+    height: 18px;
+    width: 120px;
+}  
+.search input[type=submit]
+{
+    margin: 0;
+    width: 70px;
+    height: 20px;
+    font-size: 11px;
+    border: none;
+    background: #fff;
+    color: #000;
+}
+
+.navigation ul 
+{
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+.navigation ul li 
+{
+    display: block;
+    float: left;
+    margin: 0 6px;
+}
+
+.navigation ul a 
+{
+    color: #fff;
+    line-height: 30px;
+}
+
+.content 
+{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.content_inner 
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.avatar
+{
+    width: 200px;
+    float: left;
+}
+.avatar img 
+{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.avatar a 
+{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+
+table 
+{
+    border: 1px solid #ccc;
+    width: 600px;
+}
+table td 
+{
+    height: 34px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+.moder_block 
+{
+    width: 950px;
+    margin: 6px 0;
+    padding: 5px;
+    background: #eee;
+    min-height: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.secondary_links 
+{
+    width: 100%;
+    float: left;
+    height: 24px;
+    margin-bottom: 10px;
+   
+}
+.secondary_links  a 
+{
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #666;
+    display: block;
+    float: left;
+    padding: 2px 6px;
+    min-width: 80px;
+    text-align: center;
+}
+.secondary_links  a:hover 
+{
+    background: #666;
+    color: #fff;
+    border-color: #666;
+}
+.friend 
+{
+    width: 100px;
+    height: 160px;
+    float: left;
+    margin: 4px;
+    position: relative;
+} 
+.friend img 
+{
+    width: 100%;
+    height: 130px;
+}
+.friend a 
+{
+    position: absolute;
+    bottom: 0;
+}
+.user_friends 
+{
+    float: left;
+    width: 730px;
+    padding: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.find 
+{
+    width: 100%;
+    float: left;
+    margin: 4px 0;
+    background: #eee;
+    height: 20px;
+}

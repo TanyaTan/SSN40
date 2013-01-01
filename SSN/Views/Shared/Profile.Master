@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+     <link href="../../Content/Profile.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <div class="page">
+        <div class="header">
+            <div class="header_inner">
+                
+                <div class="search">
+                   <%: Html.Partial("SearchControl")%> 
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><%: Html.ActionLink("My Profile", "Index", "Profile")%></li>
+                        <li><%: Html.ActionLink("My Friends", "Index", "Friends") %></li>
+                        <li><%: Html.ActionLink("My FriendRequests", "Index", "FriendRequests")%></li>
+                        <li><%: Html.ActionLink("My Messages", "Inbox", "Messages") %></li>
+                        <li><%: Html.ActionLink("My Settings", "Settings", "Profile")%></li>
+                        <li><%: Html.ActionLink("LogOut", "LogOff", "Account") %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content_inner">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
